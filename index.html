@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Luma - AI Study Partner</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <div class="logo">LUMA ✦</div>
+
+        <div class="nav-links">
+            <a href="#planner">Planner</a>
+            <a href="#how-it-works">How it works</a>
+            <a href="#about">About</a>
+        </div>
+    </nav>
+
+    <header class="hero">
+
+        <div class="hero-text">
+
+            <p class="eyebrow">YOUR PERSONAL STUDY PARTNER</p>
+
+            <h1>
+                Study smarter.<br>
+                <span>Not harder.</span>
+            </h1>
+
+            <p class="hero-description">
+                Luma helps you turn your subjects, topics and available
+                time into a simple study plan you can actually follow.
+            </p>
+
+            <a href="#planner">
+                <button class="primary-button">
+                    Start Planning →
+                </button>
+            </a>
+
+        </div>
+
+        <div class="hero-card">
+
+            <div class="sparkle">✦</div>
+
+            <div class="mini-card">
+                <span>Today's focus</span>
+                <strong>Physics</strong>
+            </div>
+
+            <div class="mini-card">
+                <span>Study time</span>
+                <strong>2 hours</strong>
+            </div>
+
+            <div class="mini-card">
+                <span>Luma says</span>
+                <strong>You've got this! ♡</strong>
+            </div>
+
+        </div>
+
+    </header>
+
+
+    <main id="planner" class="planner-section">
+
+        <div class="section-heading">
+            <p class="eyebrow">LET'S GET STARTED</p>
+
+            <h2>Build your study plan</h2>
+
+            <p>
+                Tell Luma what you're studying and how much time you have.
+            </p>
+        </div>
+
+
+        <div class="planner-container">
+
+            <form id="study-form" class="planner-form">
+
+                <label for="subject">
+                    Subject
+                </label>
+
+                <input
+                    type="text"
+                    id="subject"
+                    placeholder="e.g. Physics"
+                    required
+                >
+
+
+                <label for="topics">
+                    Topics to cover
+                </label>
+
+                <textarea
+                    id="topics"
+                    placeholder="e.g. Vectors, Newton's Laws, Friction"
+                    required
+                ></textarea>
+
+                <p class="input-hint">
+                    Separate multiple topics with commas.
+                </p>
+
+
+                <label for="time">
+                    Time available
+                </label>
+
+                <div class="time-input">
+                    <input
+                        type="number"
+                        id="time"
+                        min="0.5"
+                        step="0.5"
+                        placeholder="2"
+                        required
+                    >
+
+                    <span>hours</span>
+                </div>
+
+
+                <button type="submit" class="primary-button full-button">
+                    ✦ Generate My Plan
+                </button>
+
+            </form>
+
+
+            <!-- RESULT -->
+            <div id="study-plan" class="study-plan">
+
+                <div class="empty-state">
+
+                    <div class="empty-icon">✦</div>
+
+                    <h3>Your study plan will appear here</h3>
+
+                    <p>
+                        Fill in the details and let Luma organize
+                        your study session.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </main>
+
+
+    <section id="how-it-works" class="info-section">
+
+        <div class="section-heading">
+            <p class="eyebrow">HOW LUMA WORKS</p>
+
+            <h2>From chaos to clarity.</h2>
+        </div>
+
+
+        <div class="feature-grid">
+
+            <div class="feature-card">
+                <div class="feature-number">01</div>
+
+                <h3>Tell Luma</h3>
+
+                <p>
+                    Enter your subject, topics and available study time.
+                </p>
+            </div>
+
+
+            <div class="feature-card">
+                <div class="feature-number">02</div>
+
+                <h3>Get a plan</h3>
+
+                <p>
+                    Luma divides your time into focused study sessions.
+                </p>
+            </div>
+
+
+            <div class="feature-card">
+                <div class="feature-number">03</div>
+
+                <h3>Start learning</h3>
+
+                <p>
+                    Follow your plan, check off tasks and keep moving.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <section class="mission-section">
+
+        <div class="mission-content">
+
+            <p class="eyebrow">EXPLORE • LEARN • DISCOVER</p>
+
+            <h2>
+                Learning should feel like
+                <span>exploration.</span>
+            </h2>
+
+            <p>
+                Luma is designed to make learning more structured,
+                interactive and accessible — helping students spend
+                less time wondering what to study and more time actually learning.
+            </p>
+
+            <div class="mission-badge">
+                🚀 Built for curious minds
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <section id="about" class="about-section">
+
+        <p class="eyebrow">ABOUT LUMA</p>
+
+        <h2>Your study partner, whenever you need it.</h2>
+
+        <p>
+            Luma turns your study goals into manageable steps,
+            helping you organize your time and stay focused.
+        </p>
+
+    </section>
+
+
+    <footer>
+
+        <div>
+            <strong>LUMA ✦</strong>
+            <p>AI Study Partner</p>
+        </div>
+
+        <p>Made with curiosity ♡</p>
+
+    </footer>
+
+
+    <script src="luma.js"></script>
+
+</body>
+</html>
